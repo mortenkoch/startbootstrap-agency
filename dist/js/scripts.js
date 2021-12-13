@@ -5,7 +5,7 @@
 */
 //
 // Scripts
-// 
+//
 
 window.addEventListener('DOMContentLoaded', event => {
 
@@ -23,7 +23,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
     };
 
-    // Shrink the navbar 
+    // Shrink the navbar
     navbarShrink();
 
     // Shrink the navbar when page is scrolled
@@ -51,4 +51,44 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    var terminatorStart = Math.floor(Math.random() * 30000) + 10000;
+    console.log(terminatorStart)
+    setTimeout(startNinjaCounter, terminatorStart);
+
+    function startNinjaCounter() {
+        console.log('Maja triggered')
+        var timing = 10;
+        var elem = document.getElementById("MajaNinja");
+        var pos = -100;
+
+        var id = setInterval(popup, timing);
+        function popup() {
+            // STOP EVENT
+            if (pos == -13) {
+                clearInterval(id);
+
+                setTimeout(function () {
+                    id = setInterval(popdown, timing * 4);
+                }, 2000);
+            } else {
+                pos++;
+                elem.style.right = pos + 'px';
+            }
+        }
+        function popdown() {
+            // STOP EVENT
+            if (pos == -100) {
+                clearInterval(id);
+            } else {
+                pos--;
+                elem.style.right = pos + 'px';
+            }
+        }
+
+        //setTimeout(babyPopdown, 2000);
+    }
+
+    function babyPopdown() {
+        // POP DOWN
+    }
 });
