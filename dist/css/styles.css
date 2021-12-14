@@ -11356,6 +11356,7 @@ p {
 .schedule-container .gif img {
   border: 2px solid black;
   border-radius: 10px;
+  width: 100%;
 }
 @media (min-width: 992px) {
   .schedule-container .gif {
@@ -11369,7 +11370,7 @@ p {
 @media (min-width: 768px) {
   .schedule-container .info {
     width: 100%;
-    max-width: 100%;
+    max-width: 60%;
     display: block;
     margin: 0px;
   }

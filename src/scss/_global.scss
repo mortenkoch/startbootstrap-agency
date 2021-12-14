@@ -87,6 +87,7 @@ p {
         img{
             border: 2px solid black;
             border-radius: 10px;
+            width:100%;
         }
 
         @include media-breakpoint-up(lg) {
@@ -97,7 +98,7 @@ p {
     .info{
         @include media-breakpoint-up(md) {
             width: 100%;
-            max-width: 100%;
+            max-width: 60%;
             display: block;
             margin:0px;
 
