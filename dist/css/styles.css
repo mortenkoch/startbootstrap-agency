@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
 * Start Bootstrap - Agency v7.0.10 (https://startbootstrap.com/theme/agency)
-* Copyright 2013-2021 Start Bootstrap
+* Copyright 2013-2024 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
 */
 /*!
@@ -11388,12 +11388,104 @@ p {
 
 #MajaNinja {
   position: fixed;
-  height: 100px;
-  width: 100px;
-  right: -100px;
-  top: 280px;
+  width: 220px;
+  left: -220px;
+  bottom: 0px;
+  -webkit-animation-name: ninja;
+          animation-name: ninja;
+  -webkit-animation-duration: 6s;
+          animation-duration: 6s;
+  -webkit-animation-delay: 10s;
+          animation-delay: 10s;
 }
 
+/* The animation code */
+@-webkit-keyframes ninja {
+  0% {
+    left: -220px;
+  }
+  10% {
+    bottom: -20px;
+  }
+  20% {
+    bottom: 0px;
+  }
+  30% {
+    bottom: -20px;
+  }
+  40% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: -20px;
+  }
+  60% {
+    bottom: 0px;
+    transform: rotate(0deg);
+    bottom: 0px;
+  }
+  70% {
+    left: calc(100% - 182px);
+    transform: rotate(-34deg);
+    bottom: -24px;
+  }
+  80% {
+    left: calc(100% - 182px);
+    transform: rotate(-34deg);
+    bottom: -24px;
+  }
+  90% {
+    left: calc(100% - 182px);
+    transform: rotate(-34deg);
+    bottom: -24px;
+  }
+  100% {
+    left: calc(100% + 220px);
+  }
+}
+@keyframes ninja {
+  0% {
+    left: -220px;
+  }
+  10% {
+    bottom: -20px;
+  }
+  20% {
+    bottom: 0px;
+  }
+  30% {
+    bottom: -20px;
+  }
+  40% {
+    bottom: 0px;
+  }
+  50% {
+    bottom: -20px;
+  }
+  60% {
+    bottom: 0px;
+    transform: rotate(0deg);
+    bottom: 0px;
+  }
+  70% {
+    left: calc(100% - 182px);
+    transform: rotate(-34deg);
+    bottom: -24px;
+  }
+  80% {
+    left: calc(100% - 182px);
+    transform: rotate(-34deg);
+    bottom: -24px;
+  }
+  90% {
+    left: calc(100% - 182px);
+    transform: rotate(-34deg);
+    bottom: -24px;
+  }
+  100% {
+    left: calc(100% + 220px);
+  }
+}
 .btn-xl {
   padding: 1.25rem 2.5rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11424,7 +11516,7 @@ p {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: hotpink;
+  color: white;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   letter-spacing: 0.0625em;
@@ -11436,7 +11528,7 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.95rem;
-  color: hotpink;
+  color: white;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11445,10 +11537,10 @@ p {
 
 @media (min-width: 992px) {
   #mainNav {
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border: none;
-    background-color: transparent;
+    background-color: black;
     transition: padding-top 0.3s ease-in-out, padding-bottom 0.3s ease-in-out;
   }
   #mainNav .navbar-brand {
@@ -11479,7 +11571,7 @@ p {
   }
 }
 header.masthead {
-  padding-top: 15rem;
+  padding-top: 20rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
@@ -11512,7 +11604,7 @@ header.masthead {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 23.5rem;
+    padding-top: 33.5rem;
     padding-bottom: 12.5rem;
   }
 
@@ -11622,7 +11714,7 @@ container .btn-primary {
 }
 
 .link {
-  color: hotpink;
+  color: black;
   display: block;
   padding: 20px;
 }
