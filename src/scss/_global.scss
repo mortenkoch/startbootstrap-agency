@@ -123,8 +123,25 @@ p {
 
 #MajaNinja {
     position: fixed;
-    height: 100px;
-    width: 100px;
-    right: -100px;
-    top: 280px;
+    width: 220px;
+    left: -220px;
+    bottom: 0px;
+    animation-name: ninja;
+    animation-duration: 6s;
+    animation-delay: 10s;
+}
+
+/* The animation code */
+@keyframes ninja {
+    0% {left: -220px;}
+    10%{bottom: -20px}
+    20%{bottom: 0px}
+    30%{bottom: -20px}
+    40%{bottom: 0px}
+    50%{bottom: -20px}
+    60%{bottom: 0px;transform: rotate(0deg);bottom: 0px;}
+    70%{left: calc(100% - 182px);transform: rotate(-34deg);bottom: -24px;}
+    80%{left: calc(100% - 182px);transform: rotate(-34deg);bottom: -24px;}
+    90%{left: calc(100% - 182px);transform: rotate(-34deg);bottom: -24px;}
+    100% {left: calc(100% + 220px);}
 }

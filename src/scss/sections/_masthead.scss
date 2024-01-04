@@ -3,7 +3,7 @@
 //
 
 header.masthead {
-    padding-top: 15rem;
+    padding-top: 20rem;
     padding-bottom: 6rem;
     text-align: center;
     color: $white;
@@ -36,7 +36,7 @@ header.masthead {
 
 @include media-breakpoint-up(md) {
     header.masthead {
-        padding-top: 23.5rem;
+        padding-top: 33.5rem;
         padding-bottom: 12.5rem;
     }
 
